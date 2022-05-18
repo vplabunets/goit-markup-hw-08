@@ -1,0 +1,27 @@
+body {
+  font-family: $main-font-family;
+  /* font-family: 'Raleway', sans-serif; */
+  color: $main-text-color;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

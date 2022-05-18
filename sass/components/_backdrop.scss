@@ -1,0 +1,215 @@
+.backdrop-wrap {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 250ms;
+}
+
+.modal__title {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $secondary-text-color;
+}
+
+.backdrop {
+  @extend %list;
+}
+
+.backdrop__item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.backdrop__item--top {
+  margin-top: 10px;
+}
+
+.checkbox {
+  display: flex;
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $main-text-color;
+}
+
+.backdrop__input--height {
+  height: 40px;
+}
+.backdrop__input,
+.backdrop__label,
+.backdrop__textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.backdrop__icon {
+  position: absolute;
+  left: 12px;
+  bottom: 11px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop__label {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: $main-text-color;
+}
+
+.backdrop__input {
+  margin-top: 4px;
+  padding-left: 40px;
+  border-radius: 4px;
+  color: $main-text-color;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  cursor: pointer;
+  fill: currentColor;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover + .backdrop__icon,
+  &:focus + .backdrop__icon,
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    outline-color: $accent-color;
+    border-color: $accent-color;
+  }
+}
+
+.backdrop__textarea {
+  resize: none;
+  margin-top: 4px;
+  padding: 12px 16px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    outline-color: $accent-color;
+    border-color: $accent-color;
+  }
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+.backdrop__input-checkbox {
+  @extend %visually-hidden;
+  margin-top: 0;
+  border: 0;
+}
+
+.backdrop__checkbox-text {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.backdrop__icon-check {
+  position: absolute;
+  left: 12px;
+  z-index: 2;
+  background-color: white;
+}
+
+.backdrop__icon-checked {
+  z-index: 1;
+}
+.backdrop__input-checkbox:checked
+  + .backdrop__checkbox-text
+  > .backdrop__icon-check {
+  opacity: 0;
+}
+
+/* .checkbox-input:focus + .checkbox-text div > .icon-backdrop-check {
+    opacity: 0;
+  } */
+
+.backdrop__contract-text {
+  margin-left: 8px;
+}
+.backdrop__contract-link {
+  @extend %link;
+  color: $accent-color;
+}
+
+.backdrop__btn {
+  @extend %btn;
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.backdrop.is-hidden .backdrop__modal {
+  transform: scale(0) skewX(-90deg) rotateX(-90deg);
+}
+
+.modal {
+  padding: 40px;
+  margin: auto;
+  width: 528px;
+  min-height: 581px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 1);
+  position: absolute;
+  transition-duration: 500ms;
+  transform: scale(1) skewX(0) rotateX(0);
+}
+
+.modal__close-btn {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: $main-white-color;
+  fill: $logo-color;
+  cursor: pointer;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    fill: $accent-color;
+  }
+}
+
+.is-hidden {
+  /* задает (не)прозрачность */
+  opacity: 0;
+  /* запрещает события */
+  pointer-events: none;
+  /* запрещает фокус */
+  visibility: hidden;
+}
