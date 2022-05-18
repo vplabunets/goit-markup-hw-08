@@ -1,22 +1,13 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
-.backdrop, .portfolio__list, .porfolio-filter, .footer-contacts__list, .customers, .social, .team, .products, .features, .header-contacts, .site-nav {
+.backdrop, .portfolio__list, .porfolio-filter, .social, .team, .products, .features {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.backdrop__contract-link, .portfolio__link, .social__link--dark, .footer-contacts__link, .customers__link, .social__link, .header-contacts__link, .site-nav__link, .logo {
+.backdrop__contract-link, .portfolio__link, .social__link {
   text-decoration: none;
-}
-
-.logo {
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  cursor: pointer;
 }
 
 .backdrop__input-checkbox, .section__title--hidden {
@@ -33,7 +24,7 @@
   overflow: hidden;
 }
 
-.backdrop__btn, .footer-mailing__btn, .hero__btn {
+.backdrop__btn, .hero__btn {
   display: inline-block;
   font-weight: 700;
   font-size: 16px;
@@ -311,29 +302,6 @@ summary {
   display: list-item;
 }
 
-.container {
-  margin: 0 auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  color: #212121;
-}
-
-.section__title {
-  color: #212121;
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   /* font-family: 'Raleway', sans-serif; */
@@ -363,142 +331,90 @@ img {
   height: auto;
 }
 
-.page-header {
-  border-bottom: 1px solid #ececec;
+.container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .container {
+    max-width: 1140px;
+  }
 }
 
-.container__page-header {
-  display: flex;
-}
-
-.nav {
-  display: flex;
-}
-
-.logo {
-  color: #000000;
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
-
-.logo__web {
-  color: #2196f3;
-}
-
-.site-nav {
-  display: flex;
-}
-
-.site-nav__item {
-  position: relative;
-}
-
-.site-nav__item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.site-nav__link {
-  display: block;
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
   color: #212121;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.site-nav__link:hover, .site-nav__link:focus {
-  color: #2196f3;
-}
-
-.header-container {
-  display: flex;
-}
-
-.site-nav__link--currentLink {
-  color: #2196f3;
-}
-
-.site-nav__link--currentLink::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  width: 100%;
-  border-bottom: 4px solid #2196f3;
-  border-radius: 2px;
-}
-
-.header-contacts {
-  display: flex;
   margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .section {
+    max-width: 480px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .section {
+    max-width: 1140px;
+  }
 }
 
-.header-contacts__item:first-child {
-  margin-right: 50px;
-}
-
-.header-contacts__link {
-  display: flex;
-  color: #757575;
-  min-width: 122px;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  align-items: center;
-  fill: currentColor;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header-contacts__link:hover, .header-contacts__link:focus {
-  color: #2196f3;
-}
-
-.header-contacts__icon {
-  margin-right: 10px;
+.section__title {
+  color: #212121;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .hero {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  max-width: 1600px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroudphoto-hero.jpg);
+  padding: 118px 45px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-color: rgb(196, 196, 196);
+  width: 100%;
 }
 
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36em;
+  font-size: 26px;
+  line-height: 1.62em;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  width: 696px;
+  width: 100%;
 }
 
 .features {
-  display: flex;
-}
-
-.features__item:not(last-child) {
-  margin-right: 30px;
+  width: 100%;
 }
 
 .features__icon {
@@ -509,7 +425,6 @@ img {
 .features__icon-wrap {
   background: #f5f4fa;
   border-radius: 4px;
-  display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
@@ -517,7 +432,6 @@ img {
 
 .features__title {
   margin-bottom: 10px;
-  width: 270px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -632,138 +546,6 @@ img {
 }
 .social__link:hover, .social__link:focus {
   background-color: #2196f3;
-  fill: #ffffff;
-}
-
-.customers {
-  display: flex;
-}
-
-.customers__item:not(last-child) {
-  margin-right: 30px;
-}
-
-.customers__link {
-  display: flex;
-  width: 170px;
-  height: 92px;
-  border: 1px solid rgb(175, 177, 184);
-  border-radius: 4px;
-  align-items: center;
-  justify-content: center;
-  fill: #afb1b8;
-  transition-property: border-color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.customers__link:hover, .customers__link:focus {
-  fill: #2196f3;
-  border-color: #2196f3;
-}
-
-.footer {
-  background-color: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.container--flex {
-  display: flex;
-  align-items: baseline;
-  flex-grow: 1;
-}
-
-.footer-contacts {
-  flex-grow: 1;
-}
-
-.logo__studio--white {
-  color: white;
-}
-
-.footer-contacts__address {
-  font-style: normal;
-  margin-top: 20px;
-}
-
-.footer-contacts__item {
-  margin-bottom: 9px;
-}
-
-.footer-contacts__link {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-  display: flex;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-contacts__link:hover, .footer-contacts__link:focus {
-  color: #2196f3;
-}
-
-.footer-contacts__link--street {
-  color: #ffffff;
-}
-
-.footer-social__title {
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-.social__link--dark {
-  background-color: rgba(255, 255, 255, 0.1);
-  fill: #ffffff;
-}
-
-.social__item:not(last-child) {
-  margin-right: 10px;
-}
-
-.footer-mailing {
-  margin-left: 93px;
-  display: flex;
-}
-
-.footer-mailing__wrap {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-mailing__input {
-  display: block;
-  border: 0;
-  padding-left: 16px;
-  margin-right: 12px;
-  color: #ffffff;
-}
-
-.footer-mailing__input {
-  background-color: #2f303a;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  width: 358px;
-  height: 50px;
-}
-
-.footer-mailing__btn {
-  display: flex;
-  align-items: center;
-  align-self: end;
-  padding-left: 29px;
-}
-
-.footer-mailing__icon {
-  margin-left: 10px;
   fill: #ffffff;
 }
 

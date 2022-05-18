@@ -2,13 +2,17 @@
   @extend %visually-hidden;
 }
 .features {
-  display: flex;
+  //   display: flex;
   @extend %list;
+  width: 100%;
 }
 
-.features__item:not(last-child) {
-  margin-right: $between-li-distance;
+.features__item {
 }
+
+// .features__item:not(last-child) {
+//   margin-right: $between-li-distance;
+// }
 .features__icon {
   margin-top: 25px;
   margin-bottom: 26px;
@@ -17,14 +21,14 @@
 .features__icon-wrap {
   background: #f5f4fa;
   border-radius: 4px;
-  display: flex;
+  //   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
 }
 .features__title {
   margin-bottom: 10px;
-  width: 270px;
+  //   width: 270px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;

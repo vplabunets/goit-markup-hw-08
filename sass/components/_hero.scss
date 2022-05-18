@@ -2,39 +2,33 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  max-width: 1600px;
+  padding: 118px 45px;
+  //   padding-bottom: 118px;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/backgroudphoto-hero.jpg);
+    url(../images/Header-img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-color: rgba(196, 196, 196, 1);
+  width: 100%;
 }
 
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36em;
+  font-size: 26px;
+  line-height: 1.62em;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $main-white-color;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  width: 696px;
+  width: 100%;
 }
-
-// .footer-mailing__btn {
-//   display: flex;
-//   align-items: center;
-//   align-self: end;
-// }
 
 .hero__btn {
   @extend %btn;
