@@ -3,16 +3,21 @@
 }
 .porfolio-filter {
   @extend %list;
-  display: flex;
   margin-bottom: 50px;
-  justify-content: center;
+  display: inline-block;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .porfolio__filter-item {
   margin-right: 8px;
+  display: inline;
 }
 
 .portfolio__btn {
+  display: inline-block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -97,9 +102,15 @@
 }
 
 .portfolio__item {
-  flex-basis: calc(100% / 3 - $between-li-distance);
+  // flex-basis: calc(100% / 6 - $between-li-distance);
   margin-top: $between-li-distance;
   margin-left: $between-li-distance;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+  @media screen and (min-width: 1199px) {
+    flex-basis: calc((100% - 90px) / 3);
+  }
 }
 
 .portfolio__link {

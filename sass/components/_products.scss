@@ -1,6 +1,11 @@
 .section--no-padding-top {
   padding-top: 0;
 }
+.section__products {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
 .products {
   display: flex;
   @extend %list;
@@ -11,6 +16,10 @@
 
 .products__item:not(last-child) {
   margin-right: $between-li-distance;
+}
+
+.products__image {
+  width: auto;
 }
 
 .products__name {

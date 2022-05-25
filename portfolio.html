@@ -15,16 +15,27 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body class="page">
-    <header class="page-header">
-      <div class="container container__page-header">
-        <nav class="nav">
-          <a class="logo" href="index.html">
+      <header class="page-header">
+      <div class="container container__page-header" >
+        <a class="logo--header" href="index.html">
             <span class="logo__web" lang="en">Web</span
             ><span class="logo__studio" lang="en">Studio</span>
-          </a>
+        </a>
+        <button type="button" class="mobile-open-btn" data-mobile-open="">
+               <svg class="mobile-menu__icon" width="40" height="40">
+                <use href="./images/icons.svg#icon-menu"></use>
+              </svg>
+            </button>
+        <div class="mobile-menu " data-mobile>
+        <button type="button" class="mobile-close-btn" data-mobile-close="">
+              <svg class="mobile-menu__icon" width="40" height="40">
+                <use href="./images/icons.svg#icon-mobile-close"></use>
+              </svg>
+            </button>
+        <nav class="nav">
           <ul class="site-nav">
             <li class="site-nav__item">
-              <a class="site-nav__link" href="./index.html">Студия</a>
+              <a class="site-nav__link"  href="./index.html">Студия</a>
             </li>
             <li class="site-nav__item">
               <a class="site-nav__link site-nav__link--currentLink" href="./portfolio.html">Портфолио</a>
@@ -43,7 +54,7 @@
               <svg class="header-contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
-              info@devstudio.com
+             info@devstudio.com
             </a>
           </li>
           <li class="header-contacts__item">
@@ -55,8 +66,28 @@
             </a>
           </li>
         </ul>
+        <ul class="header-social">
+          <li class="header-social__item">
+            <a class="header-social__link" href="">
+              Instgram
+            </a></li>
+          <li class="header-social__item">
+            <a class="header-social__link" href="">
+            Twitter
+            </a></li>
+          <li class="header-social__item">
+            <a class="header-social__link" href="">
+              Facebook
+            </a></li>
+          <li class="header-social__item">
+            <a class="header-social__link" href="">
+              Linkedin
+            </a></li>
+        </ul>
+        </div>
       </div>
     </header>
+    <main>
     <main>
       <section class="section">
         <div class="container">
@@ -74,7 +105,7 @@
             <li class="porfolio__filter-item">
               <button class="portfolio__btn" type="button">Дизайн</button>
             </li>
-            <li class="">
+            <li class="porfolio__filter-item">
               <button class="portfolio__btn" type="button">Маркетинг</button>
             </li>
           </ul>
@@ -82,13 +113,16 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio__img-wrap">
-                  <img
-                    class="portfolio__img"
-                    src="./images/portfolio-1.jpg"
-                    alt="Технокряк"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="./images/portfolio-1-450.jpg 1x, ./images/portfolio-1-450@2x.jpg 2x" media="(max-width: 767px)">
+                    <source srcset="./images/portfolio-1-354.jpg 1x, ./images/portfolio-1-354@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/portfolio-1-370.jpg 1x, ./images/portfolio-1-370@2x.jpg 2x" media="(min-width: 1200px)">
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio-1-450.jpg"
+                      alt="Технокряк"
+                    />
+                  </picture>
                   <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -104,13 +138,16 @@
             <li class="portfolio__item">
               <a class="link portfolio__link" href="">
                 <div class="portfolio__img-wrap">
-                  <img
-                    class=""
-                    src="./images/portfolio-2.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="./images/portfolio-2-450.jpg 1x, ./images/portfolio-2-450@2x.jpg 2x" media="(max-width: 767px)">
+                    <source srcset="./images/portfolio-2-354.jpg 1x, ./images/portfolio-2-354@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/portfolio-2-370.jpg 1x, ./images/portfolio-2-370@2x.jpg 2x" media="(min-width: 1200px)">
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio-2.jpg"
+                      alt="Технокряк"
+                    />
+                  </picture>
                   <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -128,13 +165,16 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio__img-wrap">
-                  <img
-                    class=""
-                    src="./images/portfolio-3.jpg"
-                    alt="Ресторан Seafood"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="./images/portfolio-3-450.jpg 1x, ./images/portfolio-3-450@2x.jpg 2x" media="(max-width: 767px)">
+                    <source srcset="./images/portfolio-3-354.jpg 1x, ./images/portfolio-3-354@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/portfolio-3-370.jpg 1x, ./images/portfolio-3-370@2x.jpg 2x" media="(min-width: 1200px)">
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio-3-450.jpg"
+                      alt="Технокряк"
+                    />
+                  </picture>
                   <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -152,13 +192,16 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio__img-wrap">
-                  <img
-                    class=""
-                    src="./images/portfolio-4.jpg"
-                    alt="Проект Prime"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="./images/portfolio-4-450.jpg 1x, ./images/portfolio-4-450@2x.jpg 2x" media="(max-width: 767px)">
+                    <source srcset="./images/portfolio-4-354.jpg 1x, ./images/portfolio-4-354@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/portfolio-4-370.jpg 1x, ./images/portfolio-4-370@2x.jpg 2x" media="(min-width: 1200px)">
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio-4-450.jpg"
+                      alt="Технокряк"
+                    />
+                  </picture>
                   <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -176,13 +219,16 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio__img-wrap">
-                  <img
-                    class=""
-                    src="./images/portfolio-5.jpg"
-                    alt="Проект Boxes"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="./images/portfolio-5-450.jpg 1x, ./images/portfolio-5-450@2x.jpg 2x" media="(max-width: 767px)">
+                    <source srcset="./images/portfolio-5-354.jpg 1x, ./images/portfolio-5-354@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/portfolio-5-370.jpg 1x, ./images/portfolio-5-370@2x.jpg 2x" media="(min-width: 1200px)">
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio-5-450.jpg"
+                      alt="Технокряк"
+                    />
+                  </picture>
                   <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -200,13 +246,16 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio__img-wrap">
-                  <img
-                    class=""
-                    src="./images/portfolio-6.jpg"
-                    alt="Inspiration has no Borders"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="./images/portfolio-6-450.jpg 1x, ./images/portfolio-6-450@2x.jpg 2x" media="(max-width: 767px)">
+                    <source srcset="./images/portfolio-6-354.jpg 1x, ./images/portfolio-6-354@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/portfolio-6-370.jpg 1x, ./images/portfolio-6-370@2x.jpg 2x" media="(min-width: 1200px)">
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio-6-450.jpg"
+                      alt="Технокряк"
+                    />
+                  </picture>
                   <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -224,13 +273,16 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio__img-wrap">
-                  <img
-                    class=""
-                    src="./images/portfolio-7.jpg"
-                    alt="Издание Limited Edition"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="./images/portfolio-7-450.jpg 1x, ./images/portfolio-7-450@2x.jpg 2x" media="(max-width: 767px)">
+                    <source srcset="./images/portfolio-7-354.jpg 1x, ./images/portfolio-7-354@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/portfolio-7-370.jpg 1x, ./images/portfolio-7-370@2x.jpg 2x" media="(min-width: 1200px)">
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio-7-450.jpg"
+                      alt="Технокряк"
+                    />
+                  </picture>
                   <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -248,13 +300,16 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio__img-wrap">
-                  <img
-                    class=""
-                    src="./images/portfolio-8.jpg"
-                    alt="Проект LAB"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="./images/portfolio-8-450.jpg 1x, ./images/portfolio-8-450@2x.jpg 2x" media="(max-width: 767px)">
+                    <source srcset="./images/portfolio-8-354.jpg 1x, ./images/portfolio-8-354@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/portfolio-8-370.jpg 1x, ./images/portfolio-8-370@2x.jpg 2x" media="(min-width: 1200px)">
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio-8-450.jpg"
+                      alt="Технокряк"
+                    />
+                  </picture>
                   <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -272,13 +327,16 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio__img-wrap">
-                  <img
-                    class=""
-                    src="./images/portfolio-9.jpg"
-                    alt="Growing Business"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="./images/portfolio-9-450.jpg 1x, ./images/portfolio-9-450@2x.jpg 2x" media="(max-width: 767px)">
+                    <source srcset="./images/portfolio-9-354.jpg 1x, ./images/portfolio-9-354@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/portfolio-9-370.jpg 1x, ./images/portfolio-9-370@2x.jpg 2x" media="(min-width: 1200px)">
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio-9-450.jpg"
+                      alt="Технокряк"
+                    />
+                  </picture>
                   <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -298,10 +356,11 @@
       </section>
     </main>
     <!-- Footer section -->
-    <footer class="footer">
+        <footer class="footer">
       <div class="container container--flex">
+      
         <div class="footer-contacts">
-          <a class=" logo" href="index.html">
+          <a class="logo footer__logo" href="index.html">
             <span class="logo__web" lang="en">Web</span
             ><span class="logo__studio logo__studio--white" lang="en">Studio</span>
           </a>
@@ -356,7 +415,7 @@
                 </svg>
               </a>
             </li>
-            <li class="social__item footer-social__item--right">
+            <li class="social__item">
               <a
                 href=""
                 class="social__link social__link--dark"
@@ -380,9 +439,10 @@
             </li>
           </ul>
         </div>
+        
         <form class="footer-mailing">
           <div class="footer-mailing__wrap">
-            <label class="footer-social__title" for="footer-mailing-form">
+            <label class="footer-mailing__title" for="footer-mailing-form">
               Подпишитесь на рассылку
             </label>
             <input
