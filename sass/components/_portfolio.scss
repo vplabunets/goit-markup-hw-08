@@ -3,21 +3,34 @@
 }
 .porfolio-filter {
   @extend %list;
-  margin-bottom: 50px;
-  display: inline-block;
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
   @media screen and (min-width: 768px) {
-    display: flex;
+    margin-bottom: 30px;
     justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
   }
 }
 
 .porfolio__filter-item {
   margin-right: 8px;
-  display: inline;
+  &:last-child {
+    @media screen and (max-width: 387px) {
+      margin-top: 15px;
+    }
+  }
+  &:first-child {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 15px;
+    }
+  }
 }
 
 .portfolio__btn {
-  display: inline-block;
+  height: 38px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;

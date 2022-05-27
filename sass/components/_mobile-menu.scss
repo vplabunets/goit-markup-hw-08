@@ -6,12 +6,14 @@
     width: 100vw;
     height: 100vh;
     padding: 48px 40px;
+
     background-color: #fff;
     transform: translateX(100%);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &.is-open {
       transform: translate(0);
+      z-index: 1;
       // transition-duration: 250ms;
       // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -19,6 +21,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     padding: 0;
+    width: 100%;
   }
 }
 

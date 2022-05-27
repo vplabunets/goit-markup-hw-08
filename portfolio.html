@@ -15,79 +15,76 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body class="page">
-      <header class="page-header">
-      <div class="container container__page-header" >
+    <header class="page-header">
+      <div class="container container__page-header">
         <a class="logo--header" href="index.html">
-            <span class="logo__web" lang="en">Web</span
-            ><span class="logo__studio" lang="en">Studio</span>
+          <span class="logo__web" lang="en">Web</span
+          ><span class="logo__studio" lang="en">Studio</span>
         </a>
         <button type="button" class="mobile-open-btn" data-mobile-open="">
-               <svg class="mobile-menu__icon" width="40" height="40">
-                <use href="./images/icons.svg#icon-menu"></use>
-              </svg>
-            </button>
-        <div class="mobile-menu " data-mobile>
-        <button type="button" class="mobile-close-btn" data-mobile-close="">
-              <svg class="mobile-menu__icon" width="40" height="40">
-                <use href="./images/icons.svg#icon-mobile-close"></use>
-              </svg>
-            </button>
-        <nav class="nav">
-          <ul class="site-nav">
-            <li class="site-nav__item">
-              <a class="site-nav__link"  href="./index.html">Студия</a>
+          <svg class="mobile-menu__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu" data-mobile>
+          <button type="button" class="mobile-close-btn" data-mobile-close="">
+            <svg class="mobile-menu__icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-mobile-close"></use>
+            </svg>
+          </button>
+          <nav class="nav">
+            <ul class="site-nav">
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="./index.html">Студия</a>
+              </li>
+              <li class="site-nav__item">
+                <a
+                  class="site-nav__link site-nav__link--currentLink"
+                  href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header-contacts">
+            <li class="header-contacts__item">
+              <a class="header-contacts__link" href="mailto:info@devstudio.com">
+                <svg class="header-contacts__icon envelope" viewbox="0 0 14 10">
+                  <use href="./images/icons.svg#icon-envelope"></use></svg
+                >info@devstudio.com
+              </a>
             </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link site-nav__link--currentLink" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="">Контакты</a>
+            <li class="header-contacts__item">
+              <a class="header-contacts__link" href="tel:+380961111111">
+                <svg
+                  class="header-contacts__icon smartphone"
+                  viewbox="0 0 10 14"
+                >
+                  <use href="./images/icons.svg#icon-smartphone"></use></svg
+                >+38 096 111 11 11
+              </a>
             </li>
           </ul>
-        </nav>
-        <ul class="header-contacts">
-          <li class="header-contacts__item">
-            <a
-              class="header-contacts__link"
-              href="mailto:info@devstudio.com"
-            >
-              <svg class="header-contacts__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-             info@devstudio.com
-            </a>
-          </li>
-          <li class="header-contacts__item">
-            <a class="header-contacts__link" href="tel:+380961111111">
-              <svg class="header-contacts__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
-        <ul class="header-social">
-          <li class="header-social__item">
-            <a class="header-social__link" href="">
-              Instgram
-            </a></li>
-          <li class="header-social__item">
-            <a class="header-social__link" href="">
-            Twitter
-            </a></li>
-          <li class="header-social__item">
-            <a class="header-social__link" href="">
-              Facebook
-            </a></li>
-          <li class="header-social__item">
-            <a class="header-social__link" href="">
-              Linkedin
-            </a></li>
-        </ul>
+          <ul class="header-social">
+            <li class="header-social__item">
+              <a class="header-social__link" href=""> Instgram </a>
+            </li>
+            <li class="header-social__item">
+              <a class="header-social__link" href=""> Twitter </a>
+            </li>
+            <li class="header-social__item">
+              <a class="header-social__link" href=""> Facebook </a>
+            </li>
+            <li class="header-social__item">
+              <a class="header-social__link" href=""> Linkedin </a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
-    <main>
     <main>
       <section class="section">
         <div class="container">
@@ -114,9 +111,27 @@
               <a class="portfolio__link" href="">
                 <div class="portfolio__img-wrap">
                   <picture>
-                    <source srcset="./images/portfolio-1-450.jpg 1x, ./images/portfolio-1-450@2x.jpg 2x" media="(max-width: 767px)">
-                    <source srcset="./images/portfolio-1-354.jpg 1x, ./images/portfolio-1-354@2x.jpg 2x" media="(min-width: 768px)">
-                    <source srcset="./images/portfolio-1-370.jpg 1x, ./images/portfolio-1-370@2x.jpg 2x" media="(min-width: 1200px)">
+                    <source
+                      srcset="
+                        ./images/portfolio-1-370.jpg    1x,
+                        ./images/portfolio-1-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-1-354.jpg    1x,
+                        ./images/portfolio-1-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-1-450.jpg    1x,
+                        ./images/portfolio-1-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
                     <img
                       class="portfolio__img"
                       src="./images/portfolio-1-450.jpg"
@@ -139,9 +154,27 @@
               <a class="link portfolio__link" href="">
                 <div class="portfolio__img-wrap">
                   <picture>
-                    <source srcset="./images/portfolio-2-450.jpg 1x, ./images/portfolio-2-450@2x.jpg 2x" media="(max-width: 767px)">
-                    <source srcset="./images/portfolio-2-354.jpg 1x, ./images/portfolio-2-354@2x.jpg 2x" media="(min-width: 768px)">
-                    <source srcset="./images/portfolio-2-370.jpg 1x, ./images/portfolio-2-370@2x.jpg 2x" media="(min-width: 1200px)">
+                    <source
+                      srcset="
+                        ./images/portfolio-2-370.jpg    1x,
+                        ./images/portfolio-2-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-2-354.jpg    1x,
+                        ./images/portfolio-2-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-2-450.jpg    1x,
+                        ./images/portfolio-2-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
                     <img
                       class="portfolio__img"
                       src="./images/portfolio-2.jpg"
@@ -166,9 +199,27 @@
               <a class="portfolio__link" href="">
                 <div class="portfolio__img-wrap">
                   <picture>
-                    <source srcset="./images/portfolio-3-450.jpg 1x, ./images/portfolio-3-450@2x.jpg 2x" media="(max-width: 767px)">
-                    <source srcset="./images/portfolio-3-354.jpg 1x, ./images/portfolio-3-354@2x.jpg 2x" media="(min-width: 768px)">
-                    <source srcset="./images/portfolio-3-370.jpg 1x, ./images/portfolio-3-370@2x.jpg 2x" media="(min-width: 1200px)">
+                    <source
+                      srcset="
+                        ./images/portfolio-3-370.jpg    1x,
+                        ./images/portfolio-3-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-3-354.jpg    1x,
+                        ./images/portfolio-3-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-3-450.jpg    1x,
+                        ./images/portfolio-3-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
                     <img
                       class="portfolio__img"
                       src="./images/portfolio-3-450.jpg"
@@ -193,9 +244,27 @@
               <a class="portfolio__link" href="">
                 <div class="portfolio__img-wrap">
                   <picture>
-                    <source srcset="./images/portfolio-4-450.jpg 1x, ./images/portfolio-4-450@2x.jpg 2x" media="(max-width: 767px)">
-                    <source srcset="./images/portfolio-4-354.jpg 1x, ./images/portfolio-4-354@2x.jpg 2x" media="(min-width: 768px)">
-                    <source srcset="./images/portfolio-4-370.jpg 1x, ./images/portfolio-4-370@2x.jpg 2x" media="(min-width: 1200px)">
+                    <source
+                      srcset="
+                        ./images/portfolio-4-370.jpg    1x,
+                        ./images/portfolio-4-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-4-354.jpg    1x,
+                        ./images/portfolio-4-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-4-450.jpg    1x,
+                        ./images/portfolio-4-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
                     <img
                       class="portfolio__img"
                       src="./images/portfolio-4-450.jpg"
@@ -220,9 +289,27 @@
               <a class="portfolio__link" href="">
                 <div class="portfolio__img-wrap">
                   <picture>
-                    <source srcset="./images/portfolio-5-450.jpg 1x, ./images/portfolio-5-450@2x.jpg 2x" media="(max-width: 767px)">
-                    <source srcset="./images/portfolio-5-354.jpg 1x, ./images/portfolio-5-354@2x.jpg 2x" media="(min-width: 768px)">
-                    <source srcset="./images/portfolio-5-370.jpg 1x, ./images/portfolio-5-370@2x.jpg 2x" media="(min-width: 1200px)">
+                    <source
+                      srcset="
+                        ./images/portfolio-5-370.jpg    1x,
+                        ./images/portfolio-5-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-5-354.jpg    1x,
+                        ./images/portfolio-5-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-5-450.jpg    1x,
+                        ./images/portfolio-5-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
                     <img
                       class="portfolio__img"
                       src="./images/portfolio-5-450.jpg"
@@ -247,9 +334,27 @@
               <a class="portfolio__link" href="">
                 <div class="portfolio__img-wrap">
                   <picture>
-                    <source srcset="./images/portfolio-6-450.jpg 1x, ./images/portfolio-6-450@2x.jpg 2x" media="(max-width: 767px)">
-                    <source srcset="./images/portfolio-6-354.jpg 1x, ./images/portfolio-6-354@2x.jpg 2x" media="(min-width: 768px)">
-                    <source srcset="./images/portfolio-6-370.jpg 1x, ./images/portfolio-6-370@2x.jpg 2x" media="(min-width: 1200px)">
+                    <source
+                      srcset="
+                        ./images/portfolio-6-370.jpg    1x,
+                        ./images/portfolio-6-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-6-354.jpg    1x,
+                        ./images/portfolio-6-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-6-450.jpg    1x,
+                        ./images/portfolio-6-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
                     <img
                       class="portfolio__img"
                       src="./images/portfolio-6-450.jpg"
@@ -274,9 +379,27 @@
               <a class="portfolio__link" href="">
                 <div class="portfolio__img-wrap">
                   <picture>
-                    <source srcset="./images/portfolio-7-450.jpg 1x, ./images/portfolio-7-450@2x.jpg 2x" media="(max-width: 767px)">
-                    <source srcset="./images/portfolio-7-354.jpg 1x, ./images/portfolio-7-354@2x.jpg 2x" media="(min-width: 768px)">
-                    <source srcset="./images/portfolio-7-370.jpg 1x, ./images/portfolio-7-370@2x.jpg 2x" media="(min-width: 1200px)">
+                    <source
+                      srcset="
+                        ./images/portfolio-7-370.jpg    1x,
+                        ./images/portfolio-7-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-7-354.jpg    1x,
+                        ./images/portfolio-7-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-7-450.jpg    1x,
+                        ./images/portfolio-7-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
                     <img
                       class="portfolio__img"
                       src="./images/portfolio-7-450.jpg"
@@ -301,9 +424,27 @@
               <a class="portfolio__link" href="">
                 <div class="portfolio__img-wrap">
                   <picture>
-                    <source srcset="./images/portfolio-8-450.jpg 1x, ./images/portfolio-8-450@2x.jpg 2x" media="(max-width: 767px)">
-                    <source srcset="./images/portfolio-8-354.jpg 1x, ./images/portfolio-8-354@2x.jpg 2x" media="(min-width: 768px)">
-                    <source srcset="./images/portfolio-8-370.jpg 1x, ./images/portfolio-8-370@2x.jpg 2x" media="(min-width: 1200px)">
+                    <source
+                      srcset="
+                        ./images/portfolio-8-370.jpg    1x,
+                        ./images/portfolio-8-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-8-354.jpg    1x,
+                        ./images/portfolio-8-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-8-450.jpg    1x,
+                        ./images/portfolio-8-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
                     <img
                       class="portfolio__img"
                       src="./images/portfolio-8-450.jpg"
@@ -328,9 +469,27 @@
               <a class="portfolio__link" href="">
                 <div class="portfolio__img-wrap">
                   <picture>
-                    <source srcset="./images/portfolio-9-450.jpg 1x, ./images/portfolio-9-450@2x.jpg 2x" media="(max-width: 767px)">
-                    <source srcset="./images/portfolio-9-354.jpg 1x, ./images/portfolio-9-354@2x.jpg 2x" media="(min-width: 768px)">
-                    <source srcset="./images/portfolio-9-370.jpg 1x, ./images/portfolio-9-370@2x.jpg 2x" media="(min-width: 1200px)">
+                    <source
+                      srcset="
+                        ./images/portfolio-9-370.jpg    1x,
+                        ./images/portfolio-9-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-9-354.jpg    1x,
+                        ./images/portfolio-9-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-9-450.jpg    1x,
+                        ./images/portfolio-9-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
                     <img
                       class="portfolio__img"
                       src="./images/portfolio-9-450.jpg"
@@ -356,13 +515,14 @@
       </section>
     </main>
     <!-- Footer section -->
-        <footer class="footer">
+    <footer class="footer">
       <div class="container container--flex">
-      
         <div class="footer-contacts">
           <a class="logo footer__logo" href="index.html">
             <span class="logo__web" lang="en">Web</span
-            ><span class="logo__studio logo__studio--white" lang="en">Studio</span>
+            ><span class="logo__studio logo__studio--white" lang="en"
+              >Studio</span
+            >
           </a>
           <address class="footer-contacts__address">
             <ul class="footer-contacts__list">
@@ -379,11 +539,10 @@
                 <a class="footer-contacts__link" href="tel:+380991111111"
                   >+38 099 111 11 11</a
                 >
-              </li  class="footer-contacts__item">
-              <li>
-                <a
-                  class="footer-contacts__link"
-                  href="mailto:info@example.com"
+              </li>
+
+              <li class="footer-contacts__item">
+                <a class="footer-contacts__link" href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
@@ -439,7 +598,7 @@
             </li>
           </ul>
         </div>
-        
+
         <form class="footer-mailing">
           <div class="footer-mailing__wrap">
             <label class="footer-mailing__title" for="footer-mailing-form">
@@ -462,5 +621,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
