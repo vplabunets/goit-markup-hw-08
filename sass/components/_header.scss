@@ -174,10 +174,8 @@
 
 .header-contacts__link {
   @extend %link;
-  @media screen and (max-width: 430px) {
-    font-size: 26px;
-  }
   color: $main-text-color;
+  font-size: 26px;
   font-weight: 500;
   letter-spacing: 0.02em;
   align-items: center;
@@ -193,6 +191,8 @@
   @media screen and (min-width: 431px) {
     font-size: 28px;
     line-height: 1.17;
+  }
+  @media screen and (max-width: 767px) {
     &:hover,
     &:focus {
       font-size: 34px;
