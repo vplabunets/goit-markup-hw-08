@@ -463,16 +463,23 @@ img {
   border: none;
 }
 
-.nav {
-  display: flex;
+@media screen and (max-width: 767px) {
+  .nav {
+    margin-bottom: auto;
+  }
 }
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+  }
+}
+
 .site-nav {
   display: flex;
 }
 @media screen and (max-width: 767px) {
   .site-nav {
     flex-direction: column;
-    margin-bottom: 302px;
   }
 }
 
@@ -554,7 +561,7 @@ img {
 @media screen and (min-width: 1200px) {
   .header-contacts {
     flex-direction: row;
-    margin-left: 298px;
+    margin-left: auto;
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -587,10 +594,15 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 430px) {
+  .header-contacts__link {
+    font-size: 26px;
+  }
+}
 .header-contacts__link:hover, .header-contacts__link:focus {
   color: #2196f3;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 431px) {
   .header-contacts__link {
     font-size: 28px;
     line-height: 1.17;
@@ -671,8 +683,18 @@ img {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   padding-right: 10px;
 }
+@media screen and (max-width: 430px) {
+  .header-social__item:not(:last-child) {
+    padding-right: 2px;
+  }
+}
 .header-social__item:not(:first-child) {
   padding-left: 10px;
+}
+@media screen and (max-width: 430px) {
+  .header-social__item:not(:first-child) {
+    padding-left: 2px;
+  }
 }
 
 .header-social__link {
@@ -682,13 +704,22 @@ img {
   letter-spacing: 0.02em;
   color: #2196f3;
 }
+@media screen and (max-width: 430px) {
+  .header-social__link {
+    font-size: 14px;
+  }
+}
 
 .no-scroll {
   overflow: hidden;
 }
 
+.mobile-menu {
+  display: flex;
+}
 @media screen and (max-width: 767px) {
   .mobile-menu {
+    flex-direction: column;
     position: fixed;
     top: 0;
     left: 0;
@@ -1029,12 +1060,11 @@ img {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
+    justify-content: space-around;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer .container {
-    display: flex;
-    flex-wrap: nowrap;
     align-items: baseline;
   }
 }
@@ -1044,17 +1074,6 @@ img {
     margin-bottom: 60px;
   }
 }
-@media screen and (min-width: 768px) {
-  .footer-contacts {
-    flex-grow: 1;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer-contacts {
-    flex-grow: unset;
-  }
-}
-
 .footer__logo {
   display: block;
 }
@@ -1079,11 +1098,11 @@ img {
   margin-top: 20px;
 }
 
-.footer-contacts__item {
+.footer-contacts__item:not(:last-child) {
   margin-bottom: 8px;
 }
-@media screen and (max-width: 767px) {
-  .footer-contacts__item {
+@media screen and (min-width: 1200px) {
+  .footer-contacts__item:not(:last-child) {
     margin-bottom: 9px;
   }
 }
@@ -1105,11 +1124,6 @@ img {
   color: #ffffff;
 }
 
-@media screen and (min-width: 768px) {
-  .footer-social {
-    width: 50%;
-  }
-}
 @media screen and (min-width: 1200px) {
   .footer-social {
     width: auto;
@@ -1154,13 +1168,14 @@ img {
   align-items: center;
   flex-grow: 1;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .footer-mailing {
-    flex-direction: row;
+    margin-top: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-mailing {
+    flex-direction: row;
     align-items: unset;
     margin-left: 93px;
   }
@@ -1170,11 +1185,6 @@ img {
   .footer-mailing__wrap {
     text-align: center;
     width: 100%;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .footer-mailing__wrap {
-    margin-top: 60px;
   }
 }
 
@@ -1239,6 +1249,7 @@ img {
   margin-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
+  row-gap: 15px;
 }
 @media screen and (min-width: 768px) {
   .porfolio-filter {
@@ -1252,18 +1263,8 @@ img {
   }
 }
 
-.porfolio__filter-item {
+.porfolio__filter-item:not(:last-child) {
   margin-right: 8px;
-}
-@media screen and (max-width: 387px) {
-  .porfolio__filter-item:last-child {
-    margin-top: 15px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .porfolio__filter-item:first-child {
-    margin-bottom: 15px;
-  }
 }
 
 .portfolio__btn {
